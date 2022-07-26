@@ -18,7 +18,7 @@ h1{
 .container{
     padding: 50px;
     padding-bottom: 100px;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
