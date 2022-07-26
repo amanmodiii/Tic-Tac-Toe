@@ -41,6 +41,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .box{
