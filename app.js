@@ -56,40 +56,64 @@ function playerHasWon(){
     if(spaces[0] === currentP){
         if(spaces[1] === currentP && spaces[2] === currentP){
             console.log(currentP + " won on top row!");
+            document.querySelectorAll(".box")[0].style.color = "red";
+            document.querySelectorAll(".box")[1].style.color = "red";
+            document.querySelectorAll(".box")[2].style.color = "red";
             return true;
         }
         if(spaces[3] === currentP && spaces[6] === currentP){
             console.log(currentP + " won on left column!");
+            document.querySelectorAll(".box")[0].style.color = "red";
+            document.querySelectorAll(".box")[3].style.color = "red";
+            document.querySelectorAll(".box")[6].style.color = "red";
             return true;
         }
         if(spaces[4] === currentP && spaces[8] === currentP){
             console.log(currentP + " won on the left diagonal!");
+            document.querySelectorAll(".box")[0].style.color = "red";
+            document.querySelectorAll(".box")[4].style.color = "red";
+            document.querySelectorAll(".box")[8].style.color = "red";
             return true;
         }
     }
     else if(spaces[2] === currentP){
         if(spaces[4] === currentP && spaces[6] === currentP){
             console.log(currentP + " won on the right diagonal!");
+            document.querySelectorAll(".box")[2].style.color = "red";
+            document.querySelectorAll(".box")[4].style.color = "red";
+            document.querySelectorAll(".box")[6].style.color = "red";
             return true;
         }
         if(spaces[5] === currentP && spaces[8] === currentP){
             console.log(currentP + " won on the right column!");
+            document.querySelectorAll(".box")[2].style.color = "red";
+            document.querySelectorAll(".box")[5].style.color = "red";
+            document.querySelectorAll(".box")[8].style.color = "red";
             return true;
         }
     }
     else if(spaces[6] === currentP){
         if(spaces[7] === currentP && spaces[8] === currentP){
             console.log(currentP + " won on the bottom row!");
+            document.querySelectorAll(".box")[6].style.color = "red";
+            document.querySelectorAll(".box")[7].style.color = "red";
+            document.querySelectorAll(".box")[8].style.color = "red";
             return true;
         }
     }
     else if(spaces[4] === currentP){
         if(spaces[3] === currentP && spaces[5] === currentP){
             console.log(currentP + " won on the mid row!");
+            document.querySelectorAll(".box")[3].style.color = "red";
+            document.querySelectorAll(".box")[4].style.color = "red";
+            document.querySelectorAll(".box")[5].style.color = "red";
             return true;
         }
         if(spaces[1] === currentP && spaces[7] === currentP){
             console.log(currentP + " won on the mid column!");
+            document.querySelectorAll(".box")[1].style.color = "red";
+            document.querySelectorAll(".box")[4].style.color = "red";
+            document.querySelectorAll(".box")[7].style.color = "red";
             return true;
         }
     }
