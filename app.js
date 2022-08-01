@@ -31,6 +31,7 @@ document.querySelector(".restartGame").addEventListener("click",function(){
     for(i = 0 ; i <  boxno ; i++ ){
         spaces[i] = null;
         document.querySelectorAll(".box")[i].innerText="";
+        document.querySelectorAll(".box")[i].style.color = "#00204a";
     }
     heading.innerText = "TicTacToe";
 });
@@ -44,7 +45,10 @@ function clicked(event){
         event.target.innerText = currentP;
 
         if(playerHasWon()){
-            heading.innerText=currentP + " has Won!"
+            heading.innerText=currentP + " has Won!";
+            for(i=0 ;i < boxno ; i++){
+                document.querySelectorAll(".box")[i].removeEventListener("click",clicked);
+            }
             return;
         }
         currentP = (currentP === O_text) ? X_text : O_text;
