@@ -32,6 +32,7 @@ document.querySelector(".restartGame").addEventListener("click",function(){
         spaces[i] = null;
         document.querySelectorAll(".box")[i].innerText="";
         document.querySelectorAll(".box")[i].style.color = "#00204a";
+        document.querySelectorAll(".box")[i].addEventListener("click",clicked);
     }
     heading.innerText = "TicTacToe";
 });
